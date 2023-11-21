@@ -1,0 +1,75 @@
+main{
+    margin: 10px;
+    padding: 20px;
+    background-image: url(../images/vista-superior-arreglo-escritorio-medico-espacio-copia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+form{
+    padding: 20px;
+    min-width:100% ;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 100px;
+    min-height: 500px;
+    background-color: rgba(0, 0, 0, 0.433);
+}
+.boton {
+    min-width: 230px;
+    font-size: 1.2rem;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #57cc99;
+    color: #57cc99;
+}
+.observations label{
+    min-width: 60%;
+}
+.boton {
+    margin-top: 20px;
+    color: #1b1a1a;
+}
+.boton:hover{
+    color: white;
+    font-weight: bolder;
+}
+.boton:hover:after {
+    height: 100%;
+    
+}
+
+.boton:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #57cc99;
+}
+@media all and (min-width:600px){
+    .data_client{ 
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media all and (min-width:600px){
+    form{
+        min-width: 50%;
+    }
+}
